@@ -1,0 +1,43 @@
+{
+  "name": "create-nuxt3-app",
+  "description": "Create Nuxt3 App Template",
+  "version": "0.1.0",
+  "private": true,
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Shimpei-GANGAN/create-nuxt3-app"
+  },
+  "engines": {
+    "node": "^16.10.0 || >=18.0.0",
+    "yarn": "🚨:Please use npm instead."
+  },
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev -o",
+    "dev:help": "nuxt dev --help",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "devDependencies": {
+    "@nuxt/devtools": "latest",
+    "@types/node": "^18.17.1",
+    "nuxt": "^3.6.5"
+  },
+  "peerDependencies": {
+    "typescript": ">=4.0.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.5%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
