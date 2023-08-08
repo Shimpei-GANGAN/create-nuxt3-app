@@ -18,10 +18,13 @@
     "dev:help": "nuxt dev --help",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "lint": "eslint --ignore-path .gitignore .",
+    "lint:fix": "eslint --ignore-path .gitignore --fix ."
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",
+    "@nuxt/eslint-config": "0.1.1",
     "@nuxtjs/eslint-module": "^4.1.0",
     "@types/node": "^18.17.1",
     "eslint": "^8.46.0",
