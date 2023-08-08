@@ -10,7 +10,7 @@ module.exports = {
   env: {
     browser: true,
   },
-  extends: ["@nuxt/eslint-config"],
+  extends: ["@nuxt/eslint-config", "prettier"],
   rules: {
     "@typescript-eslint/explicit-function-return-type": "off",
     "no-console": process.env.NODE_ENV === "production" ? "error" : "warn",
