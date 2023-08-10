@@ -1,8 +1,8 @@
 // @ts-check
 /**
  * @type {import('eslint').ESLint.ConfigData}
- * @see {@link https://github.com/nuxt/eslint-config/ | Github: nuxt/eslint-config}
- * @see {@link https://typescript-eslint.io/rules/explicit-function-return-type/ | Rules: explicit-function-return-type}
+ * @see GitHub: {@link https://github.com/nuxt/eslint-config/ | nuxt/eslint-config}
+ * @see ESLint Rules: {@link https://typescript-eslint.io/rules/explicit-function-return-type/ | explicit-function-return-type}
  * - NOTE: Return Typesの明示を必須にする
  */
 module.exports = {
