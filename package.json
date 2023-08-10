@@ -20,7 +20,8 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "lint": "eslint --ignore-path .gitignore .",
-    "lint:fix": "eslint --ignore-path .gitignore --fix ."
+    "lint:fix": "eslint --ignore-path .gitignore --fix .",
+    "test:ut": "vitest"
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",
@@ -32,7 +33,8 @@
     "eslint-config-prettier": "^9.0.0",
     "nuxt": "^3.6.5",
     "prettier": "^3.0.1",
-    "prettier-plugin-organize-imports": "^3.2.3"
+    "prettier-plugin-organize-imports": "^3.2.3",
+    "vitest": "^0.34.1"
   },
   "peerDependencies": {
     "eslint": ">=7.0.0",
