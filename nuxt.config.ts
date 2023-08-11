@@ -2,7 +2,10 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   rootDir: "./src",
-  modules: ["@nuxtjs/eslint-module"],
+  modules: ["@pinia/nuxt", "@nuxtjs/eslint-module"],
+  pinia: {
+    autoImports: ["defineStore", "storeToRefs"],
+  },
   eslint: {
     cache: false,
     eslintPath: "./eslintrc.js",
