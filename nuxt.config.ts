@@ -8,6 +8,5 @@ export default defineNuxtConfig({
   },
   eslint: {
     cache: false,
-    eslintPath: "./eslintrc.js",
   },
 });
