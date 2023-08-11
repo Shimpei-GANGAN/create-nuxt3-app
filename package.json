@@ -23,6 +23,10 @@
     "lint:fix": "eslint --ignore-path .gitignore --fix .",
     "test:ut": "vitest"
   },
+  "dependencies": {
+    "@pinia/nuxt": "^0.4.11",
+    "pinia": "^2.1.6"
+  },
   "devDependencies": {
     "@nuxt/devtools": "latest",
     "@nuxt/eslint-config": "0.1.1",
@@ -53,5 +57,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "overrides": {
+    "vue": "latest"
   }
 }
