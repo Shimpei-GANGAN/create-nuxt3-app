@@ -1,8 +1,11 @@
 /// <reference types="vitest" />
+/// <reference types="histoire" />
 
+import { HstNuxt } from "@histoire/plugin-nuxt";
+import { HstVue } from "@histoire/plugin-vue";
 import Vue from "@vitejs/plugin-vue";
 import AutoImport from "unplugin-auto-import/vite";
-import { defineConfig } from "vitest/config";
+import { defineConfig } from 'vite';
 
 export default defineConfig({
   plugins: [
@@ -31,4 +34,18 @@ export default defineConfig({
       "src/**/*.{test,spec}.{js,ts,vue}",
     ],
   },
-});
+  /** @link https://histoire.dev/reference/config.html */
+  histoire: {
+    plugins: [HstVue(), HstNuxt()],
+    setupFile: "histoire.setup.ts",
+    storyMatch: ["**/*.story.vue"],
+    storyIgnored: [
+      "**/node_modules/**",
+      "**/dist/**",
+      "**/assets/**",
+      "**/public/**",
+      "**/composables/**",
+      "**/stores/**",
+    ],
+  },
+})

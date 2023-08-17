@@ -5,5 +5,12 @@
     // NOTE: https://github.com/simonhaenisch/prettier-plugin-organize-imports
     "source.organizeImports": true,
     "source.fixAll.eslint": true
-  }
+  },
+  "cSpell.userWords": [
+    "nuxt",
+    "nuxtjs",
+    "composables",
+    "histoire",
+    "pinia",
+  ]
 }
