@@ -3,6 +3,9 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   rootDir: "./src",
   modules: ["@pinia/nuxt", "@nuxtjs/eslint-module"],
+  imports: {
+    dirs: ['stores']
+  },
   pinia: {
     autoImports: ["createPinia","defineStore", "storeToRefs"],
   },
