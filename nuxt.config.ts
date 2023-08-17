@@ -11,7 +11,12 @@ export default defineNuxtConfig({
     dirs: ['stores']
   },
   pinia: {
-    autoImports: ["createPinia","defineStore", "storeToRefs"],
+    autoImports: [
+      "createPinia",
+      "defineStore",
+      "storeToRefs",
+      "setActivePinia"
+    ],
   },
   eslint: {
     cache: false,
