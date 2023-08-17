@@ -21,13 +21,18 @@
     "postinstall": "nuxt prepare",
     "lint": "eslint --ignore-path .gitignore .",
     "lint:fix": "eslint --ignore-path .gitignore --fix .",
-    "test:ut": "vitest"
+    "test:ut": "vitest",
+    "story:dev": "histoire dev",
+    "story:build": "histoire build",
+    "story:prev": "histoire preview"
   },
   "dependencies": {
     "@pinia/nuxt": "^0.4.11",
     "pinia": "^2.1.6"
   },
   "devDependencies": {
+    "@histoire/plugin-nuxt": "^0.16.5",
+    "@histoire/plugin-vue": "^0.16.5",
     "@nuxt/devtools": "latest",
     "@nuxt/eslint-config": "0.1.1",
     "@nuxtjs/eslint-module": "^4.1.0",
@@ -35,6 +40,7 @@
     "@volar/vue-typescript": "^1.6.5",
     "eslint": "^8.46.0",
     "eslint-config-prettier": "^9.0.0",
+    "histoire": "^0.16.5",
     "nuxt": "^3.6.5",
     "prettier": "^3.0.1",
     "prettier-plugin-organize-imports": "^3.2.3",

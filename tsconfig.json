@@ -1,7 +1,13 @@
 {
-  // https://nuxt.com/docs/guide/concepts/typescript
   "extends": "./src/.nuxt/tsconfig.json",
   "compilerOptions": {
-    "types": ["vitest/importMeta"]
-  }
+    "types": [
+      "vitest/importMeta"
+    ]
+  },
+  "include": [
+    "env.d.ts",
+    "src/**/*",
+    "src/**/*.vue",
+  ]
 }
