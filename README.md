@@ -34,9 +34,9 @@ Nuxt3 のテンプレートリポジトリ
 - Linter
   - [ESLint](https://eslint.org/)
 - Formatter: [Prettier](https://prettier.io/)
-- UI Components Catalog: Draft
+- UI Components Catalog: [Histoire](https://histoire.dev/)
 - UI: as you wish
-  - テンプレート先で好きなものをインストールする
+  - 本テンプレートを継承したテンプレート先で好きなものをインストールする
 
 ## Installation
 
@@ -50,6 +50,12 @@ npm i
 
 ```bash
 npm run dev
+```
+
+### Show stories
+
+```bash
+npm run story:dev
 ```
 
 ## Test
