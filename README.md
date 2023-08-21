@@ -15,6 +15,12 @@
       alt="Vitest Version Badge"
     />
   </a>
+  <a href="https://github.com/histoire-dev/histoire">
+    <img
+      src="https://img.shields.io/badge/Histoire-v0.16.5-10B981.svg?style=plastic&logo=histoire"
+      alt="Histoire Version Badge"
+    />
+  </a>
   </a>
   <a href="./LICENSE">
     <img src="https://img.shields.io/github/license/Shimpei-GANGAN/create-nuxt3-app.svg?style=plastic&color=28CFFD" alt="License">
@@ -34,9 +40,9 @@ Nuxt3 のテンプレートリポジトリ
 - Linter
   - [ESLint](https://eslint.org/)
 - Formatter: [Prettier](https://prettier.io/)
-- UI Components Catalog: Draft
+- UI Components Catalog: [Histoire](https://histoire.dev/)
 - UI: as you wish
-  - テンプレート先で好きなものをインストールする
+  - 本テンプレートを継承したテンプレート先で好きなものをインストールする
 
 ## Installation
 
@@ -50,6 +56,12 @@ npm i
 
 ```bash
 npm run dev
+```
+
+### Show stories
+
+```bash
+npm run story:dev
 ```
 
 ## Test
