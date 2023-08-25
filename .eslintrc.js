@@ -27,7 +27,12 @@ module.exports = {
       files: ["*.ts", "*.mts", "*.vue"],
       rules: {
         "@typescript-eslint/explicit-function-return-type": "error",
-        "@typescript-eslint/consistent-type-imports": "error",
+        "@typescript-eslint/consistent-type-imports": [
+          "error",
+          {
+            "disallowTypeAnnotations": false,
+          }
+        ],
         "@typescript-eslint/no-import-side-effects": "error",
       },
     },
