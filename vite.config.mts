@@ -5,13 +5,14 @@ import { HstNuxt } from "@histoire/plugin-nuxt";
 import { HstVue } from "@histoire/plugin-vue";
 import Vue from "@vitejs/plugin-vue";
 import AutoImport from "unplugin-auto-import/vite";
-import { defineConfig } from 'vite';
+import { defineConfig } from "vite";
 
 export default defineConfig({
   plugins: [
     Vue(),
     AutoImport({
       imports: ["vue", "vue-router", "pinia"],
+      dts: "src/.nuxt/auto-imports.d.ts",
     }),
   ],
   resolve: {
@@ -48,4 +49,4 @@ export default defineConfig({
       "**/stores/**",
     ],
   },
-})
+});

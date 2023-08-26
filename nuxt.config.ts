@@ -5,7 +5,7 @@ export default defineNuxtConfig({
   modules: [
     "@pinia/nuxt",
     "@pinia-plugin-persistedstate/nuxt",
-    "@nuxtjs/eslint-module"
+    "@nuxtjs/eslint-module",
   ],
   imports: {
     dirs: ['stores']
@@ -15,7 +15,7 @@ export default defineNuxtConfig({
       "createPinia",
       "defineStore",
       "storeToRefs",
-      "setActivePinia"
+      "setActivePinia",
     ],
   },
   eslint: {
