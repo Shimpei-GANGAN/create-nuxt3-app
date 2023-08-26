@@ -2,6 +2,9 @@
 /**
  * @type {import('eslint').ESLint.ConfigData}
  * @see GitHub: {@link https://github.com/nuxt/eslint-config/ | nuxt/eslint-config}
+ * @see GitHub: {@link https://github.com/veritem/eslint-plugin-vitest/ | eslint-plugin-vitest}
+ * - Rule1: {@link https://github.com/veritem/eslint-plugin-vitest/blob/main/docs/rules/consistent-test-it.md | consistent-test-it}
+ * - Rule2: {@link https://github.com/veritem/eslint-plugin-vitest/blob/main/docs/rules/require-top-level-describe.md | require-top-level-describe}
  * @see ESLint Rules: {@link https://typescript-eslint.io/rules/explicit-function-return-type/ | explicit-function-return-type}
  * - NOTE: Return Typesの明示を必須にする
  * @see ESLint Rules: {@link https://typescript-eslint.io/rules/consistent-type-imports/ | consistent-type-imports}
@@ -14,13 +17,16 @@ module.exports = {
   env: {
     browser: true,
   },
-  extends: ["@nuxt/eslint-config", "prettier"],
+  plugins: ["vitest"],
+  extends: ["@nuxt/eslint-config", "plugin:vitest/recommended", "prettier"],
   rules: {
     "@typescript-eslint/explicit-function-return-type": "off",
     "@typescript-eslint/consistent-type-imports": "off",
     "@typescript-eslint/no-import-side-effects": "off",
     "no-console": process.env.NODE_ENV === "production" ? "error" : "warn",
     "no-debugger": process.env.NODE_ENV === "production" ? "error" : "warn",
+    "vitest/consistent-test-it": ["error", { fn: "it", withinDescribe: "it" }],
+    "vitest/require-top-level-describe": ["error"],
   },
   overrides: [
     {
