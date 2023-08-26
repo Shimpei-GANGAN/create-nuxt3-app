@@ -2,15 +2,15 @@
 /**
  * @type {import('eslint').ESLint.ConfigData}
  * @see GitHub: {@link https://github.com/nuxt/eslint-config/ | nuxt/eslint-config}
+ *
  * @see GitHub: {@link https://github.com/veritem/eslint-plugin-vitest/ | eslint-plugin-vitest}
  * - Rule1: {@link https://github.com/veritem/eslint-plugin-vitest/blob/main/docs/rules/consistent-test-it.md | consistent-test-it}
  * - Rule2: {@link https://github.com/veritem/eslint-plugin-vitest/blob/main/docs/rules/require-top-level-describe.md | require-top-level-describe}
- * @see ESLint Rules: {@link https://typescript-eslint.io/rules/explicit-function-return-type/ | explicit-function-return-type}
- * - NOTE: Return Typesの明示を必須にする
- * @see ESLint Rules: {@link https://typescript-eslint.io/rules/consistent-type-imports/ | consistent-type-imports}
- * - NOTE: 型のimportを必須にする
- * @see ESLint Rules: {@link https://typescript-eslint.io/rules/no-import-type-side-effects/ | no-import-type-side-effects}
- * - NOTE: 型のimportで副作用を禁止する
+ *
+ * @see GitHub: {@link https://typescript-eslint.io/rules/ | @typescript-eslint/eslint-plugin}
+ * - Rule1: {@link https://typescript-eslint.io/rules/explicit-function-return-type/ | explicit-function-return-type} - Return Typesの明示を必須にする
+ * - Rule2: {@link https://typescript-eslint.io/rules/consistent-type-imports/ | consistent-type-imports} - 型のimportを必須にする
+ * - Rule3: {@link https://typescript-eslint.io/rules/no-import-type-side-effects/ | no-import-type-side-effects} - 型のimportで副作用を禁止する
  */
 module.exports = {
   root: true,
