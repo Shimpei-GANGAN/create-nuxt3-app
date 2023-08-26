@@ -3,12 +3,27 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   rootDir: "./src",
   modules: [
+    "@nuxtjs/i18n",
     "@pinia/nuxt",
     "@pinia-plugin-persistedstate/nuxt",
     "@nuxtjs/eslint-module",
   ],
   imports: {
-    dirs: ['stores']
+    dirs: ["stores"],
+  },
+  i18n: {
+    /** @link https://v8.i18n.nuxtjs.org/guide/lazy-load-translations */
+    lazy: true,
+    langDir: "locales/",
+    defaultLocale: "ja",
+    locales: [
+      {
+        code: "ja",
+        iso: "ja-JP",
+        file: "ja.json",
+        name: "日本語",
+      },
+    ],
   },
   pinia: {
     autoImports: [
