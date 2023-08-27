@@ -12,6 +12,7 @@
     "composables",
     "histoire",
     "pinia",
-    "persistedstate"
+    "persistedstate",
+    "vueuse"
   ]
 }
