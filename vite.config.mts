@@ -11,7 +11,7 @@ export default defineConfig({
   plugins: [
     Vue(),
     AutoImport({
-      imports: ["vue", "vue-router", "pinia"],
+      imports: ["vue", "vue-router", "pinia", "vue-i18n"],
       dts: "src/.nuxt/auto-imports.d.ts",
     }),
   ],
