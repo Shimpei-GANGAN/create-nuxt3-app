@@ -4,6 +4,7 @@ export default defineNuxtConfig({
   rootDir: "./src",
   modules: [
     "@nuxtjs/i18n",
+    "@vueuse/nuxt",
     "@pinia/nuxt",
     "@pinia-plugin-persistedstate/nuxt",
     "@nuxtjs/eslint-module",
