@@ -5,7 +5,7 @@
 <p align="center">
   <a href="https://github.com/nuxt/nuxt">
     <img
-      src="https://img.shields.io/badge/nuxt-v3.6.5-00DC82.svg?style=plastic&logo=nuxt.js"
+      src="https://img.shields.io/badge/nuxt-v3.7.1-00DC82.svg?style=plastic&logo=nuxt.js"
       alt="Nuxt Version Badge"
     />
   </a>
