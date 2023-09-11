@@ -46,7 +46,7 @@
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-vitest": "^0.2.8",
     "histoire": "^0.16.5",
-    "nuxt": "^3.6.5",
+    "nuxt": "^3.7.1",
     "prettier": "^3.0.1",
     "prettier-plugin-organize-imports": "^3.2.3",
     "unplugin-auto-import": "^0.16.6",
