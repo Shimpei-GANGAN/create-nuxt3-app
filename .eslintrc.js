@@ -16,8 +16,14 @@ module.exports = {
   env: {
     browser: true,
   },
+  ignorePatterns: ["!./storybook/*"],
   plugins: ["vitest"],
-  extends: ["@nuxt/eslint-config", "plugin:vitest/recommended", "prettier"],
+  extends: [
+    "@nuxt/eslint-config",
+    "plugin:storybook/recommended",
+    "plugin:vitest/recommended",
+    "prettier",
+  ],
   rules: {
     "@typescript-eslint/explicit-function-return-type": "off",
     "@typescript-eslint/consistent-type-imports": "off",
