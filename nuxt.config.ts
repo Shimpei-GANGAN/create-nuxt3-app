@@ -4,6 +4,7 @@ export default defineNuxtConfig({
   rootDir: "./src",
   modules: [
     "@nuxtjs/i18n",
+    "@nuxtjs/storybook",
     "@vueuse/nuxt",
     "@pinia/nuxt",
     "@pinia-plugin-persistedstate/nuxt",
@@ -36,5 +37,9 @@ export default defineNuxtConfig({
   },
   eslint: {
     cache: false,
+  },
+  storybook: {
+    url: "http://localhost:6006",
+    port: 6006,
   },
 });
