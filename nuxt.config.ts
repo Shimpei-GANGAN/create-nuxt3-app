@@ -5,8 +5,8 @@ export default defineNuxtConfig({
     "@nuxtjs/i18n",
     "@nuxtjs/storybook",
     "@vueuse/nuxt",
-    "@pinia/nuxt",
     "@pinia-plugin-persistedstate/nuxt",
+    "@pinia/nuxt",
     "@nuxtjs/eslint-module",
   ],
   imports: {
