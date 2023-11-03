@@ -26,7 +26,8 @@
     "sb:build": "storybook build"
   },
   "dependencies": {
-    "@pinia/nuxt": "^0.4.11",
+    "@pinia-plugin-persistedstate/nuxt": "^1.2.0",
+    "@pinia/nuxt": "^0.5.1",
     "pinia": "^2.1.6"
   },
   "devDependencies": {
@@ -35,7 +36,6 @@
     "@nuxtjs/eslint-module": "^4.1.0",
     "@nuxtjs/i18n": "^8.0.0-rc.3",
     "@nuxtjs/storybook": "7.0.0",
-    "@pinia-plugin-persistedstate/nuxt": "^1.1.1",
     "@storybook-vue/nuxt": "0.1.9",
     "@storybook/addon-essentials": "7.5.1",
     "@storybook/addon-interactions": "7.5.1",
