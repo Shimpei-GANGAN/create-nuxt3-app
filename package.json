@@ -9,7 +9,7 @@
     "url": "https://github.com/Shimpei-GANGAN/create-nuxt3-app"
   },
   "engines": {
-    "node": "^16.10.0 || >=18.0.0",
+    "node": "^18.0.0 || ^20.0.0",
     "yarn": "🚨:Please use npm instead."
   },
   "scripts": {
