@@ -19,8 +19,8 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "lint": "eslint --ignore-path .gitignore .",
-    "lint:fix": "eslint --ignore-path .gitignore --fix .",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
     "test:ut": "vitest",
     "sb:dev": "storybook dev --port 6006",
     "sb:build": "storybook build"
