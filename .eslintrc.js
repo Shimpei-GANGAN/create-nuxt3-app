@@ -17,7 +17,15 @@ module.exports = {
   env: {
     browser: true,
   },
-  ignorePatterns: ["!./storybook/*"],
+  ignorePatterns: [
+    ".eslintrc.js",
+    "!./storybook/*",
+    "dist",
+    "**/node_modules/**/*",
+    "src/.nuxt/**/*",
+    ".vscode/",
+    ".github/",
+  ],
   plugins: ["vitest"],
   extends: [
     "@nuxt/eslint-config",
