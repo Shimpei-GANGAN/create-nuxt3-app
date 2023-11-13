@@ -1,0 +1,38 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "dependencyDashboard": false,
+  "extends": [
+    "config:base",
+    "@nuxtjs",
+    ":prConcurrentLimit20",
+    ":semanticCommitTypeAll(chore)",
+    ":enableVulnerabilityAlertsWithLabel(security)",
+    "schedule:earlyMondays"
+  ],
+  "labels": ["🤖 renovate"],
+  "timezone": "UTC",
+  "packageRules": [
+    {
+      "groupName": "nuxt framework",
+      "groupSlug": "nuxt",
+      "matchPackageNames": ["nuxi"],
+      "matchPackagePatterns": ["nuxt", "^@nuxt/"]
+    },
+    {
+      "groupName": "nuxt modules",
+      "groupSlug": "nuxt-modules",
+      "matchPackagePatterns": ["^@nuxtjs/"]
+    },
+    {
+      "groupName": "Storybook",
+      "groupSlug": "storybook",
+      "matchPackagePatterns": ["storybook", "^@storybook/"]
+    },
+    {
+      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+      "groupName": "ESLint",
+      "groupSlug": "eslint",
+      "matchPackagePatterns": ["eslint"]
+    }
+  ]
+}
