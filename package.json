@@ -34,7 +34,7 @@
     "@nuxt/devtools": "latest",
     "@nuxt/eslint-config": "^0.2.0",
     "@nuxtjs/eslint-module": "^4.1.0",
-    "@nuxtjs/i18n": "^8.0.0-rc.3",
+    "@nuxtjs/i18n": "^8.0.0-rc.6",
     "@nuxtjs/storybook": "7.0.0",
     "@storybook-vue/nuxt": "0.1.9",
     "@storybook/addon-essentials": "7.5.1",
