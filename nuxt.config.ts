@@ -4,19 +4,13 @@ export default defineNuxtConfig({
   modules: [
     "@nuxtjs/i18n",
     "@nuxtjs/storybook",
-    "@vueuse/nuxt",
     "@pinia-plugin-persistedstate/nuxt",
     "@pinia/nuxt",
+    "@vueuse/nuxt",
     "@nuxtjs/eslint-module",
   ],
   imports: {
-    dirs: ["stores"],
-    presets: [
-      {
-        from: "pinia",
-        imports: ["createPinia", "setActivePinia"],
-      },
-    ],
+    dirs: ["schemas"],
   },
   i18n: {
     /** @link https://v8.i18n.nuxtjs.org/guide/lazy-load-translations */
