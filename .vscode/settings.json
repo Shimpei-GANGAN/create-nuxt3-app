@@ -10,7 +10,6 @@
     "nuxt",
     "nuxtjs",
     "composables",
-    "histoire",
     "pinia",
     "persistedstate",
     "vueuse"
