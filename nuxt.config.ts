@@ -7,7 +7,6 @@ export default defineNuxtConfig({
     "@pinia-plugin-persistedstate/nuxt",
     "@pinia/nuxt",
     "@vueuse/nuxt",
-    "@nuxtjs/eslint-module",
   ],
   imports: {
     dirs: ["schemas"],
@@ -28,9 +27,6 @@ export default defineNuxtConfig({
   },
   pinia: {
     storesDirs: ["stores/**"],
-  },
-  eslint: {
-    cache: false,
   },
   storybook: {
     url: "http://localhost:6006",
