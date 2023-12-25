@@ -4,13 +4,18 @@
   "extends": [
     "config:base",
     "@nuxtjs",
-    ":prConcurrentLimit20",
     ":semanticCommitTypeAll(chore)",
     ":enableVulnerabilityAlertsWithLabel(security)",
     "schedule:earlyMondays"
   ],
+  "prConcurrentLimit": 10,
   "labels": ["🤖 renovate"],
-  "timezone": "UTC",
+  "timezone": "Asia/Tokyo",
+  "reviewers": ["shinGangan"],
+  "lockFileMaintenance": {
+    "enabled": true,
+    "reviewers": ["shinGangan"]
+  },
   "packageRules": [
     {
       "groupName": "nuxt framework",
