@@ -60,7 +60,7 @@
     "react-dom": "^18.2.0",
     "storybook": "7.6.6",
     "unplugin-auto-import": "^0.17.3",
-    "vitest": "^0.34.6"
+    "vitest": "^1.1.1"
   },
   "peerDependencies": {
     "eslint": "^8.56.0",
