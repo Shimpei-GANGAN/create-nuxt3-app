@@ -33,7 +33,7 @@
   "devDependencies": {
     "@nuxt/devtools": "^1.0.8",
     "@nuxt/eslint-config": "^0.2.0",
-    "@nuxtjs/i18n": "^8.0.0",
+    "@nuxtjs/i18n": "^8.0.1",
     "@nuxtjs/storybook": "7.0.0",
     "@storybook-vue/nuxt": "0.2.2",
     "@storybook/addon-essentials": "7.6.12",
