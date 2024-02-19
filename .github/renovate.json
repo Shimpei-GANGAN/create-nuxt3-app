@@ -1,43 +1,11 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "dependencyDashboard": false,
   "extends": [
-    "config:base",
-    "@nuxtjs",
-    ":semanticCommitTypeAll(chore)",
-    ":enableVulnerabilityAlertsWithLabel(security)",
-    "schedule:earlyMondays"
+    "github>nuxt/renovate-config-nuxt",
+    "github>shinGangan/renovate-config",
+    "github>shinGangan/renovate-config//configs/nuxt/test-utils",
+    "github>shinGangan/renovate-config//configs/lint/linters",
+    "github>shinGangan/renovate-config//configs/sb"
   ],
-  "prConcurrentLimit": 10,
-  "labels": ["🤖 renovate"],
-  "timezone": "Asia/Tokyo",
   "reviewers": ["shinGangan"],
-  "lockFileMaintenance": {
-    "enabled": true,
-    "reviewers": ["shinGangan"]
-  },
-  "packageRules": [
-    {
-      "groupName": "nuxt framework",
-      "groupSlug": "nuxt",
-      "matchPackageNames": ["nuxi"],
-      "matchPackagePatterns": ["nuxt", "^@nuxt/"]
-    },
-    {
-      "groupName": "nuxt modules",
-      "groupSlug": "nuxt-modules",
-      "matchPackagePatterns": ["^@nuxtjs/"]
-    },
-    {
-      "groupName": "Storybook",
-      "groupSlug": "storybook",
-      "matchPackagePatterns": ["storybook", "^@storybook/"]
-    },
-    {
-      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
-      "groupName": "ESLint",
-      "groupSlug": "eslint",
-      "matchPackagePatterns": ["eslint"]
-    }
-  ]
 }
